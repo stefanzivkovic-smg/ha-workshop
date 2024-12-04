@@ -1,0 +1,12 @@
+name: 'Print Message Docker Action'
+description: 'A simple Docker action that prints a message.'
+
+inputs:
+  message:
+    description: 'The message to print.'
+    required: true
+    default: 'Hello, World!'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
