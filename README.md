@@ -16,7 +16,9 @@
 </p>
 
 ---
+# Project Name
 
+![Build Status](https://github.com/stefanzivkovic-smg/ha-workshop/actions/workflows/simple-workflow.yml/badge.svg)
 ## Overview
 
 Welcome to the **GitHub Actions Workshop**! This interactive workshop is designed to help you learn, practice, and master GitHub Actions—GitHub's powerful automation platform for building, testing, and deploying code.
