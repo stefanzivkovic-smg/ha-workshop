@@ -28,6 +28,12 @@ jobs:
     steps:
       - run: echo "This job will run after the initial job, in parallel with fanout2."
 
+  experiment:
+    runs-on: ubuntu-latest
+    needs: fanout3
+    steps:
+      - run: echo "This job will run after fanout3."
+
   fanin:
     runs-on: ubuntu-latest
     needs: [fanout1, fanout2]
@@ -38,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        configuration: [debug, release]
+        configuration: [debug, release, staging]
     steps:
       - run: echo "This job builds the configuration ${{ matrix.configuration }}."
 
